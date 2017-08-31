@@ -1,0 +1,19 @@
+{
+  "name": "cordova-plugin-md5-idcode-test",
+  "version": "0.0.4",
+  "description": "**Cordova / PhoneGap ID产生插件**：根据时间、用户ID、设备ID、序列号等信息产生ID信息",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackpar/cordova-plugin-md5-idcode-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackpar/cordova-plugin-md5-idcode-test/issues"
+  },
+  "homepage": "https://github.com/hackpar/cordova-plugin-md5-idcode-test#readme"
+}

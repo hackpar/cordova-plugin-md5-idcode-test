@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	id="cordova-plugin-md5-idcode" version="0.0.4">
+
+<name>generate identification code</name>
+
+<license>HDU</license>
+
+<keywords>identification, identification code, code</keywords>
+
+<description>Native interface to generate identification code.</description>
+
+<author>Leibi</author>
+
+<engines>
+	<engine name="cordova" version=">=3.3.0" />
+</engines>
+
+<js-module src="www/generateIDCode.js" name="generateIDCode.js">
+	<clobbers target="generateIDCode" />
+</js-module>
+
+<dependency id="cordova-plugin-operate-plist" url="https://github.com/bl905060/cordova-plugin-operate-plist.git" />
+<dependency id="cordova-sqlite-storage" url="https://github.com/litehelpers/Cordova-sqlite-storage" />
+
+
+<!-- ios -->
+<platform name="ios">
+	<config-file target="config.xml" parent="/widget">
+		<feature name="generateIDCode">
+			<param name="ios-package" value="generateIDCode" />
+		</feature>
+	</config-file>
+    
+    <header-file src="src/ios/generateIDCode.h" />
+    <source-file src="src/ios/generateIDCode.m" />
+    <header-file src="src/ios/NSString+MD5.h" />
+    <source-file src="src/ios/NSString+MD5.m" />
+</platform>
+</plugin>

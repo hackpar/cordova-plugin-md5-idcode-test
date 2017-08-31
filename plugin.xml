@@ -20,7 +20,7 @@
 	<clobbers target="generateIDCode" />
 </js-module>
 
-<dependency id="cordova-plugin-operate-plist" url="https://github.com/bl905060/cordova-plugin-operate-plist.git" />
+<dependency id="cordova-plugin-operate-plist" url="https://github.com/hackpar/cordova-plugin-operate-plist-test.git" />
 <dependency id="cordova-sqlite-storage" url="https://github.com/litehelpers/Cordova-sqlite-storage" />
 
 
